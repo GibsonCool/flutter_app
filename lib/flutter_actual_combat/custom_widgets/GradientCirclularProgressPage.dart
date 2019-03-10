@@ -1,8 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app/custom_widgets/CombinationWidgetPage.dart';
-import 'package:flutter_app/custom_widgets/GradientCircularProgressIndicator.dart';
+import 'package:flutter_app/flutter_actual_combat/custom_widgets/GradientCircularProgressIndicator.dart';
 import 'package:flutter_app/main.dart';
 
 class GradientCircularProgressPage extends StatefulWidget {

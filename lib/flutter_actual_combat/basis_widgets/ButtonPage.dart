@@ -45,7 +45,7 @@ class ButtonPage extends StatelessWidget {
                   "RaisedButton 未设置onPressed 按钮处于禁用状态",
                   textScaleFactor: 0.8,
                 ),
-//                onPressed: () {},
+                onPressed: () {},
               ),
               FlatButton(
                 child: Text("FlatButton 扁平按钮默认背景透明不带阴影"),
@@ -53,7 +53,7 @@ class ButtonPage extends StatelessWidget {
               ),
               FlatButton(
                 child: Text("FlatButton 未设置onPressed"),
-//                onPressed: () {},
+                onPressed: () {},
               ),
               OutlineButton(
                 child: Text("OutLineButton 背景透明无阴影 有默认边框"),
@@ -61,7 +61,7 @@ class ButtonPage extends StatelessWidget {
               ),
               OutlineButton(
                 child: Text("OutLineButton 未设置onPressed"),
-//                onPressed: () {},
+                onPressed: () {},
               ),
               // 一个可点击的Icon  不包括文字，默认没有背景，点击有背景效果
               IconButton(

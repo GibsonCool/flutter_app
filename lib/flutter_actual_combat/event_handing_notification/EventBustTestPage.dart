@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/main.dart';
-import 'package:flutter_app/event_handing_notification/EventBus.dart';
+import 'package:flutter_app/flutter_actual_combat/event_handing_notification/EventBus.dart';
 
 class EventBusTestPage extends StatefulWidget {
   @override
@@ -12,7 +12,7 @@ class _EventBusTestPageState extends State<EventBusTestPage> {
   String _evaluation = "收到的评价：\n";
 
 
-  //构造函数的时候加入家庭
+  //构造函数的时候加入监听
   _EventBusTestPageState(){
     bus.add("A", (arg){
       _evaluation+="A:"+arg+"\n";

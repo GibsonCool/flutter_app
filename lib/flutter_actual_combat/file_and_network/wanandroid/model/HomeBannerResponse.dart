@@ -1,5 +1,5 @@
-import 'package:flutter_app/file_and_network/wanandroid/BaseModel.dart';
-import 'package:flutter_app/file_and_network/wanandroid/model/HomeBanner.dart';
+import 'package:flutter_app/flutter_actual_combat/file_and_network/wanandroid/BaseModel.dart';
+import 'package:flutter_app/flutter_actual_combat/file_and_network/wanandroid/model/HomeBanner.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'HomeBannerResponse.g.dart';

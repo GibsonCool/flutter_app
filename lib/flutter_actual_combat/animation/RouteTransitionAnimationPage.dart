@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/animation/AnimationIntroductionPage.dart';
+import 'package:flutter_app/flutter_actual_combat/animation/AnimationIntroductionPage.dart';
 import 'package:flutter_app/main.dart';
 
 class RouteTransitionAnimationPage extends StatefulWidget {
