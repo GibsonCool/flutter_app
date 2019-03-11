@@ -35,6 +35,8 @@ import 'package:flutter_app/flutter_actual_combat/layout_widgets/FlexiblePage.da
 import 'package:flutter_app/flutter_actual_combat/layout_widgets/RowAndColumnPage.dart';
 import 'package:flutter_app/flutter_actual_combat/layout_widgets/StackAndPositionedPage.dart';
 import 'package:flutter_app/flutter_actual_combat/layout_widgets/WrapAndFlowPage.dart';
+import 'package:flutter_app/flutter_in_focus/1_first_flutter_widget.dart';
+import 'package:flutter_app/flutter_in_focus/2_using_material_design.dart';
 import 'package:flutter_app/page/index_page.dart';
 import 'package:flutter_app/flutter_actual_combat/scrollable_widgets/CustomScrollViewTestPage.dart';
 import 'package:flutter_app/flutter_actual_combat/scrollable_widgets/GridViewTestPage.dart';
@@ -87,6 +89,12 @@ const String GRADIENT_CIRCLUAR_PROGRESS_PAGE = "Gradient_Circluar_Progress_page"
 const String FILE_OPERATION_PAGE = "File_operation_page";
 const String HTTP_HTTPCLIENT_PAGE = "Http_HttpClient_page";
 const String HTTP_DIO_PACKAGE_PAGE = "Http_Dio_Package_page";
+
+
+
+///
+const String FOCUS_FIRST_FLUTTER_WIDGET = "Focus_first_flutter_widget";
+const String FOCUS_USING_MD_WIDGET = "Focus_Using_MD_widget";
 
 void main() {
   runApp(new MaterialApp(
@@ -143,11 +151,39 @@ void main() {
       HTTP_HTTPCLIENT_PAGE: (context) => Http_HttpClientPage(),
       HTTP_DIO_PACKAGE_PAGE: (context) => HttpDioPage(),
       ///
+      FOCUS_FIRST_FLUTTER_WIDGET: (context) => Focus1FirstFlutterWidget(),
+      FOCUS_USING_MD_WIDGET: (context) => FocusUsingMD(),
     },
     home: IndexPage(),
   ));
 }
 
+
+
+///自定义一些widget
+
+class MyListTile extends ListTile {
+  final Color backgroundColor;
+  final int index;
+  final String text;
+  final String page_route;
+  BuildContext context;
+
+  MyListTile(this.backgroundColor, this.index, this.text, this.page_route,
+      this.context)
+      : super(
+      leading: CircleAvatar(
+        backgroundColor: backgroundColor,
+        child: Text(
+          index.toString(),
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      title: Text(text),
+      onTap: () {
+        Navigator.pushNamed(context, page_route);
+      });
+}
 
 
 class KuaiLeText extends Text {

@@ -114,27 +114,3 @@ class HomeBody extends StatelessWidget {
   }
 }
 
-///自定义一些widget
-
-class MyListTile extends ListTile {
-  final Color backgroundColor;
-  final int index;
-  final String text;
-  final String page_route;
-  BuildContext context;
-
-  MyListTile(this.backgroundColor, this.index, this.text, this.page_route,
-      this.context)
-      : super(
-      leading: CircleAvatar(
-        backgroundColor: backgroundColor,
-        child: Text(
-          index.toString(),
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
-      title: Text(text),
-      onTap: () {
-        Navigator.pushNamed(context, page_route);
-      });
-}
