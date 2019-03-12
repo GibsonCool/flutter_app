@@ -37,6 +37,9 @@ import 'package:flutter_app/flutter_actual_combat/layout_widgets/StackAndPositio
 import 'package:flutter_app/flutter_actual_combat/layout_widgets/WrapAndFlowPage.dart';
 import 'package:flutter_app/flutter_in_focus/1_first_flutter_widget.dart';
 import 'package:flutter_app/flutter_in_focus/2_using_material_design.dart';
+import 'package:flutter_app/flutter_widget_week/1_safe_area_widget.dart';
+import 'package:flutter_app/flutter_widget_week/2_Expanded_widget.dart';
+import 'package:flutter_app/flutter_widget_week/4_AnimatedContainer_widget.dart';
 import 'package:flutter_app/page/index_page.dart';
 import 'package:flutter_app/flutter_actual_combat/scrollable_widgets/CustomScrollViewTestPage.dart';
 import 'package:flutter_app/flutter_actual_combat/scrollable_widgets/GridViewTestPage.dart';
@@ -96,6 +99,19 @@ const String HTTP_DIO_PACKAGE_PAGE = "Http_Dio_Package_page";
 const String FOCUS_FIRST_FLUTTER_WIDGET = "Focus_first_flutter_widget";
 const String FOCUS_USING_MD_WIDGET = "Focus_Using_MD_widget";
 
+
+
+///
+const String WEEK_SAFEAREA_WIDGET = "Week_SafeArea_widget";
+const String WEEK_EXPANDED_WIDGET = "Week_Expanded_widget";
+const String WEEK_ANIMATEDCONTAINER_WIDGET = "Week_AnimatedContainer_widget";
+
+
+
+
+
+
+
 void main() {
   runApp(new MaterialApp(
     localizationsDelegates: [
@@ -153,6 +169,11 @@ void main() {
       ///
       FOCUS_FIRST_FLUTTER_WIDGET: (context) => Focus1FirstFlutterWidget(),
       FOCUS_USING_MD_WIDGET: (context) => FocusUsingMD(),
+      ///
+      WEEK_SAFEAREA_WIDGET: (context) => WeekSafeAreaWidgetPage(),
+      WEEK_EXPANDED_WIDGET: (context) => WeekExpandedWidgetPage(),
+      WEEK_ANIMATEDCONTAINER_WIDGET: (context) => WeekAnimatedContainerWidgetPage(),
+
     },
     home: IndexPage(),
   ));
