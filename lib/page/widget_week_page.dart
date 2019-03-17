@@ -21,6 +21,10 @@ class _WidgetWeekPageState extends State<WidgetWeekPage> {
         MyListTile(Colors.redAccent, 2, "Wrap Widget", WRAP_FLOW_PAGE, context),
         MyListTile(Colors.redAccent, 3, "AnimatedContainer Widget",
             WEEK_ANIMATEDCONTAINER_WIDGET, context),
+        MyListTile(Colors.redAccent, 4, "Opacity Widget",
+            WEEK_OPACITY_WIDGET, context),
+        MyListTile(Colors.redAccent, 5, "FutureBuilder Widget",
+            WEEK_FUTUREBUILDER_WIDGET, context),
       ]),
     );
   }

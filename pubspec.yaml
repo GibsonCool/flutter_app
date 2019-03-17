@@ -13,7 +13,7 @@ description: 第一个flutterDemo
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: ">=2.1.0 <3.0.0"
 
 # 应用或者包依赖的其他包或者插件，第三方库添加依赖的地方
 # Pub(https://pub.dartlang.org/ ）是Google官方的Dart Packages仓库，类似于node中的npm仓库，android中的jcenter
