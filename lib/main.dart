@@ -42,6 +42,8 @@ import 'package:flutter_app/flutter_widget_week/2_Expanded_widget.dart';
 import 'package:flutter_app/flutter_widget_week/4_AnimatedContainer_widget.dart';
 import 'package:flutter_app/flutter_widget_week/5_opacity_widget.dart';
 import 'package:flutter_app/flutter_widget_week/6_FutureBuilder_widget.dart';
+import 'package:flutter_app/flutter_widget_week/7_fade_transition.dart';
+import 'package:flutter_app/flutter_widget_week/8_floating_action_button.dart';
 import 'package:flutter_app/page/index_page.dart';
 import 'package:flutter_app/flutter_actual_combat/scrollable_widgets/CustomScrollViewTestPage.dart';
 import 'package:flutter_app/flutter_actual_combat/scrollable_widgets/GridViewTestPage.dart';
@@ -109,6 +111,8 @@ const String WEEK_EXPANDED_WIDGET = "Week_Expanded_widget";
 const String WEEK_ANIMATEDCONTAINER_WIDGET = "Week_AnimatedContainer_widget";
 const String WEEK_OPACITY_WIDGET = "Week_opacity_widget";
 const String WEEK_FUTUREBUILDER_WIDGET = "Week_FutureBuilder_widget";
+const String WEEK_FADETRANSITION_WIDGET = "Week_FadeTransition_widget";
+const String WEEK_FAB_WIDGET = "Week_FAB_widget";
 
 
 
@@ -179,6 +183,8 @@ void main() {
       WEEK_ANIMATEDCONTAINER_WIDGET: (context) => WeekAnimatedContainerWidgetPage(),
       WEEK_OPACITY_WIDGET: (context) => WeekOpacityWidgetPage(),
       WEEK_FUTUREBUILDER_WIDGET: (context) => WeekFutureBuilderWidget(),
+      WEEK_FADETRANSITION_WIDGET: (context) => WeekFadeTransition(),
+      WEEK_FAB_WIDGET: (context) => WeekFABWidget(),
 
     },
     home: IndexPage(),
