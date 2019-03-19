@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 
@@ -23,8 +25,14 @@ class PrintRoute extends StatelessWidget {
   //构造函数
   PrintRoute(this.tip);
 
+
   @override
   Widget build(BuildContext context) {
+    ///由于这个库在拼接链接的时候不支持中文字符，所以要进行参数转码
+    var list = List<int>();
+    jsonDecode(tip).forEach(list.add);
+    final String result = Utf8Decoder().convert(list);
+
     return Scaffold(
       appBar: AppBar(
         title: Text("打印和显示传递过来的参数"),
@@ -32,7 +40,7 @@ class PrintRoute extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Text(tip),
+            Text(result),
             TapboxA(),
             ParentWidget(),
             ParentWidgetC()

@@ -1,6 +1,6 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/main.dart';
+import 'package:flutter_app/config/routes.dart';
 
 /// Flutter 中一个简单ListView列表的方式
 // 定义商品类
@@ -84,7 +84,7 @@ class _ShoppingListState extends State<ShoppingList> {
       appBar: new AppBar(
         leading: RaisedButton(
           onPressed: () {
-            Navigator.pushNamed(context, ECHO_PAGE);
+            Navigator.pushNamed(context, Routes.echoPage);
           },
           child: Text(
             WordPair.random().toString(),
@@ -117,8 +117,8 @@ class _ShoppingListState extends State<ShoppingList> {
 //            return NewRoute();
 //          }));
           //通过路由名打开新页面
-          print("打开新页面$NEW_PAGE");
-          Navigator.pushNamed(context, NEW_PAGE);
+          print("打开新页面${Routes.newPage}");
+          Navigator.pushNamed(context, Routes.newPage);
         },
         child: Icon(Icons.ac_unit),
       ),

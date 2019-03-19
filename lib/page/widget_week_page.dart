@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/config/routes.dart';
 import 'package:flutter_app/main.dart';
 
 class WidgetWeekPage extends StatefulWidget {
@@ -14,21 +15,23 @@ class _WidgetWeekPageState extends State<WidgetWeekPage> {
         title: Text('Flutter Widget of the Week'),
       ),
       body: ScrollBarColumBody(<Widget>[
-        MyListTile(Colors.redAccent, 0, "SafeArea Widget", WEEK_SAFEAREA_WIDGET,
+        MyListTile(Colors.redAccent, 0, "SafeArea Widget", Routes.weekSafeAreaPage,
             context),
-        MyListTile(Colors.redAccent, 1, "Expanded Widget", WEEK_EXPANDED_WIDGET,
+        MyListTile(Colors.redAccent, 1, "Expanded Widget", Routes.weekExpandedPage,
             context),
-        MyListTile(Colors.redAccent, 2, "Wrap Widget", WRAP_FLOW_PAGE, context),
+        MyListTile(Colors.redAccent, 2, "Wrap Widget", Routes.wrapFlowPage, context),
         MyListTile(Colors.redAccent, 3, "AnimatedContainer Widget",
-            WEEK_ANIMATEDCONTAINER_WIDGET, context),
-        MyListTile(Colors.redAccent, 4, "Opacity Widget", WEEK_OPACITY_WIDGET,
+            Routes.weekAnimatedContainerPage, context),
+        MyListTile(Colors.redAccent, 4, "Opacity Widget", Routes.weekOpacityPage,
             context),
         MyListTile(Colors.redAccent, 5, "FutureBuilder Widget",
-            WEEK_FUTUREBUILDER_WIDGET, context),
+            Routes.weekFutureBuilderPage, context),
         MyListTile(Colors.redAccent, 6, "FadeTransition Widget",
-            WEEK_FADETRANSITION_WIDGET, context),
+            Routes.weekFadeTransitionPage, context),
         MyListTile(Colors.redAccent, 7, "FloatingActionButton Widget",
-            WEEK_FAB_WIDGET, context),
+            Routes.weekFABPage, context),
+        MyListTile(Colors.redAccent, 7, "PageView Widget", Routes.weekPageViewPage,
+            context),
       ]),
     );
   }
