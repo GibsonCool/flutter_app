@@ -30,8 +30,8 @@ class _WidgetWeekPageState extends State<WidgetWeekPage> {
             Routes.weekFadeTransitionPage, context),
         MyListTile(Colors.redAccent, 7, "FloatingActionButton Widget",
             Routes.weekFABPage, context),
-        MyListTile(Colors.redAccent, 7, "PageView Widget", Routes.weekPageViewPage,
-            context),
+        MyListTile(Colors.redAccent, 8, "PageView Widget", Routes.weekPageViewPage, context),
+        MyListTile(Colors.redAccent, 9, "Table Widget", Routes.weekTablePage, context),
       ]),
     );
   }

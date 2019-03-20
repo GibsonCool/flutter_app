@@ -3,6 +3,7 @@ import 'package:flutter_app/flutter_actual_combat/basis_widgets/ShoppingListPage
 import 'package:flutter_app/flutter_actual_combat/container_widgets/ConstrainedAndSizeBoxPage.dart';
 import 'package:flutter_app/flutter_actual_combat/core_principle/ElementBuildContextPage.dart';
 import 'package:flutter_app/flutter_actual_combat/scrollable_widgets/ScrollConstrollerListenerTestPage.dart';
+import 'package:flutter_app/flutter_widget_week/10_table_widget.dart';
 import 'package:flutter_app/page/index_page.dart';
 
 
@@ -126,6 +127,7 @@ class Routes {
   static String weekFadeTransitionPage = "Week_FadeTransition_widget";
   static String weekFABPage = "Week_FAB_widget";
   static String weekPageViewPage = "Week_PageView_widget";
+  static String weekTablePage = "Week_Table_widget";
 
   static void configureRoutes(Router router) {
     ///router.define的作用相当于注册页面，routePath:要跳转的链接    handler:用来获取传参和创建界面
@@ -246,6 +248,8 @@ class Routes {
         handler: Handler(handlerFunc: (_, __) => WeekFABWidget()));
     router.define(weekPageViewPage,
         handler: Handler(handlerFunc: (_, __) => WeekPageViewWidget()));
+    router.define(weekTablePage,
+        handler: Handler(handlerFunc: (_, __) => WeekTableWidget()));
 
     Routes.router = router;
   }
