@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter_app/flutter_actual_combat/basis_widgets/ShoppingListPage.dart';
 import 'package:flutter_app/flutter_actual_combat/container_widgets/ConstrainedAndSizeBoxPage.dart';
+import 'package:flutter_app/flutter_actual_combat/core_principle/ElementBuildContextPage.dart';
 import 'package:flutter_app/flutter_actual_combat/scrollable_widgets/ScrollConstrollerListenerTestPage.dart';
 import 'package:flutter_app/page/index_page.dart';
 
@@ -110,6 +111,7 @@ class Routes {
   static String fileOperationPage = "File_operation_page";
   static String httpClientPage = "Http_HttpClient_page";
   static String httpDioPackagePage = "Http_Dio_Package_page";
+  static String elementBuildContextPage = "Element_BuildContext_page";
 
   //
   static String focusFirstFlutterPage = "Focus_first_flutter_widget";
@@ -217,6 +219,8 @@ class Routes {
         handler: Handler(handlerFunc: (_, __) => Http_HttpClientPage()));
     router.define(httpDioPackagePage,
         handler: Handler(handlerFunc: (_, __) => HttpDioPage()));
+    router.define(elementBuildContextPage,
+        handler: Handler(handlerFunc: (_, __) => ElementBuildContextPage()));
 
 
     //

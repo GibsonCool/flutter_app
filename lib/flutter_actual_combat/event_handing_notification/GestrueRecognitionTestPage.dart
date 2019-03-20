@@ -391,7 +391,7 @@ class _GestureConflictPageState extends State<GestureConflictPage> {
         direction: Axis.vertical,
         children: <Widget>[
           Expanded(
-            flex: 1,
+            flex: 2,
             child: Container(
               padding: EdgeInsets.only(left: 8),
               width: double.infinity,
