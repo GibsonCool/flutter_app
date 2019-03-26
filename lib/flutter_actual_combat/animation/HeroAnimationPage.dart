@@ -63,18 +63,21 @@ class HeroAnimationPage extends StatelessWidget {
 class HeroAnimationRouteB extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.all(20),
-          ),
-          KuaiLePadding10Text(
-            "大图显示",
-            mycolor: Colors.white,
-          ),
-          Hero(tag: "double", child: Image.asset("images/test.jpg"))
-        ],
+    return Scaffold(
+      appBar: AppBar(title: Text('查看大图'),),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(20),
+            ),
+            KuaiLePadding10Text(
+              "大图显示",
+              mycolor: Colors.white,
+            ),
+            Hero(tag: "double", child: Image.asset("images/test.jpg")),
+          ],
+        ),
       ),
     );
   }
