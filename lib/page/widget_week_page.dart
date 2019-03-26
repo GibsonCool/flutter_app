@@ -32,6 +32,8 @@ class _WidgetWeekPageState extends State<WidgetWeekPage> {
             Routes.weekFABPage, context),
         MyListTile(Colors.redAccent, 8, "PageView Widget", Routes.weekPageViewPage, context),
         MyListTile(Colors.redAccent, 9, "Table Widget", Routes.weekTablePage, context),
+        MyListTile(Colors.redAccent, 10, "SliverAppBar Widget", Routes.weekSliverAppBarPage, context),
+        MyListTile(Colors.redAccent, 10, "SliverList & SliverGrid Widget", Routes.weekSliverAppBarPage, context),
       ]),
     );
   }
